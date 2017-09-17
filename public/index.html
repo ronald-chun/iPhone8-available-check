@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<script src='assets/js/jquery-3.2.1.js'></script>
+	<script src="assets/js/script.js"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<button id="getButton" onclick="get()">手動更新</button>
+	
+	<table>
+		<tr>
+			<td>頁面更新時間</td>
+			<td id='timestamp'></td>
+		</tr>
+		<tr>
+			<td>Apple Available json 更新時間</td>
+			<td id='apple_timestamp'></td>
+		</tr>
+		<tr>
+			<td>isToday</td>
+			<td id='isToday'></td>
+		</tr>
+		<tr>
+			<td>launchDate</td>
+			<td id='launchDate'></td>
+		</tr>	
+	</table>
+
+	<hr>
+
+	<h1>Unlocked</h1>
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<td></td>
+				<td>細灰64</td>
+				<td>細銀64</td>
+				<td>細金64</td>
+				<td>細灰256</td>
+				<td>細銀256</td>
+				<td>細金256</td>
+				<td>大灰64</td>
+				<td>大銀64</td>
+				<td>大金64</td>
+				<td>大灰256</td>
+				<td>大銀256</td>
+				<td>大金256</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Canton Road</td>
+				<td id="R499_MQ6K2ZP_unlocked" class=""></td>
+				<td id="R499_MQ6L2ZP_unlocked" class=""></td>
+				<td id="R499_MQ6M2ZP_unlocked" class=""></td>
+
+				<td id="R499_MQ7F2ZP_unlocked" class=""></td>
+				<td id="R499_MQ7G2ZP_unlocked" class=""></td>
+				<td id="R499_MQ7H2ZP_unlocked" class=""></td>
+
+				<td id="R499_MQ8D2ZP_unlocked" class=""></td>
+				<td id="R499_MQ8E2ZP_unlocked" class=""></td>
+				<td id="R499_MQ8F2ZP_unlocked" class=""></td>
+
+				<td id="R499_MQ8G2ZP_unlocked" class=""></td>
+				<td id="R499_MQ8H2ZP_unlocked" class=""></td>
+				<td id="R499_MQ8J2ZP_unlocked" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>New Town Plaza</td>
+				<td id="R610_MQ6K2ZP_unlocked" class=""></td>
+				<td id="R610_MQ6L2ZP_unlocked" class=""></td>
+				<td id="R610_MQ6M2ZP_unlocked" class=""></td>
+
+				<td id="R610_MQ7F2ZP_unlocked" class=""></td>
+				<td id="R610_MQ7G2ZP_unlocked" class=""></td>
+				<td id="R610_MQ7H2ZP_unlocked" class=""></td>
+
+				<td id="R610_MQ8D2ZP_unlocked" class=""></td>
+				<td id="R610_MQ8E2ZP_unlocked" class=""></td>
+				<td id="R610_MQ8F2ZP_unlocked" class=""></td>
+				
+				<td id="R610_MQ8G2ZP_unlocked" class=""></td>
+				<td id="R610_MQ8H2ZP_unlocked" class=""></td>
+				<td id="R610_MQ8J2ZP_unlocked" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>apm Hong Kong</td>
+				<td id="R673_MQ6K2ZP_unlocked" class=""></td>
+				<td id="R673_MQ6L2ZP_unlocked" class=""></td>
+				<td id="R673_MQ6M2ZP_unlocked" class=""></td>
+
+				<td id="R673_MQ7F2ZP_unlocked" class=""></td>
+				<td id="R673_MQ7G2ZP_unlocked" class=""></td>
+				<td id="R673_MQ7H2ZP_unlocked" class=""></td>
+
+				<td id="R673_MQ8D2ZP_unlocked" class=""></td>
+				<td id="R673_MQ8E2ZP_unlocked" class=""></td>
+				<td id="R673_MQ8F2ZP_unlocked" class=""></td>
+				
+				<td id="R673_MQ8G2ZP_unlocked" class=""></td>
+				<td id="R673_MQ8H2ZP_unlocked" class=""></td>
+				<td id="R673_MQ8J2ZP_unlocked" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>Festival Walk</td>
+				<td id="R485_MQ6K2ZP_unlocked" class=""></td>
+				<td id="R485_MQ6L2ZP_unlocked" class=""></td>
+				<td id="R485_MQ6M2ZP_unlocked" class=""></td>
+
+				<td id="R485_MQ7F2ZP_unlocked" class=""></td>
+				<td id="R485_MQ7G2ZP_unlocked" class=""></td>
+				<td id="R485_MQ7H2ZP_unlocked" class=""></td>
+
+				<td id="R485_MQ8D2ZP_unlocked" class=""></td>
+				<td id="R485_MQ8E2ZP_unlocked" class=""></td>
+				<td id="R485_MQ8F2ZP_unlocked" class=""></td>
+				
+				<td id="R485_MQ8G2ZP_unlocked" class=""></td>
+				<td id="R485_MQ8H2ZP_unlocked" class=""></td>
+				<td id="R485_MQ8J2ZP_unlocked" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>Causeway Bay</td>
+				<td id="R409_MQ6K2ZP_unlocked" class=""></td>
+				<td id="R409_MQ6L2ZP_unlocked" class=""></td>
+				<td id="R409_MQ6M2ZP_unlocked" class=""></td>
+
+				<td id="R409_MQ7F2ZP_unlocked" class=""></td>
+				<td id="R409_MQ7G2ZP_unlocked" class=""></td>
+				<td id="R409_MQ7H2ZP_unlocked" class=""></td>
+
+				<td id="R409_MQ8D2ZP_unlocked" class=""></td>
+				<td id="R409_MQ8E2ZP_unlocked" class=""></td>
+				<td id="R409_MQ8F2ZP_unlocked" class=""></td>
+				
+				<td id="R409_MQ8G2ZP_unlocked" class=""></td>
+				<td id="R409_MQ8H2ZP_unlocked" class=""></td>
+				<td id="R409_MQ8J2ZP_unlocked" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>ifc </td>
+				<td id="R428_MQ6K2ZP_unlocked" class=""></td>
+				<td id="R428_MQ6L2ZP_unlocked" class=""></td>
+				<td id="R428_MQ6M2ZP_unlocked" class=""></td>
+
+				<td id="R428_MQ7F2ZP_unlocked" class=""></td>
+				<td id="R428_MQ7G2ZP_unlocked" class=""></td>
+				<td id="R428_MQ7H2ZP_unlocked" class=""></td>
+
+				<td id="R428_MQ8D2ZP_unlocked" class=""></td>
+				<td id="R428_MQ8E2ZP_unlocked" class=""></td>
+				<td id="R428_MQ8F2ZP_unlocked" class=""></td>
+				
+				<td id="R428_MQ8G2ZP_unlocked" class=""></td>
+				<td id="R428_MQ8H2ZP_unlocked" class=""></td>
+				<td id="R428_MQ8J2ZP_unlocked" class=""></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h1>Contract</h1>
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<td></td>
+				<td>細灰64</td>
+				<td>細銀64</td>
+				<td>細金64</td>
+				<td>細灰256</td>
+				<td>細銀256</td>
+				<td>細金256</td>
+				<td>大灰64</td>
+				<td>大銀64</td>
+				<td>大金64</td>
+				<td>大灰256</td>
+				<td>大銀256</td>
+				<td>大金256</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Canton Road</td>
+				<td id="R499_MQ6K2ZP_contract" class=""></td>
+				<td id="R499_MQ6L2ZP_contract" class=""></td>
+				<td id="R499_MQ6M2ZP_contract" class=""></td>
+
+				<td id="R499_MQ7F2ZP_contract" class=""></td>
+				<td id="R499_MQ7G2ZP_contract" class=""></td>
+				<td id="R499_MQ7H2ZP_contract" class=""></td>
+
+				<td id="R499_MQ8D2ZP_contract" class=""></td>
+				<td id="R499_MQ8E2ZP_contract" class=""></td>
+				<td id="R499_MQ8F2ZP_contract" class=""></td>
+
+				<td id="R499_MQ8G2ZP_contract" class=""></td>
+				<td id="R499_MQ8H2ZP_contract" class=""></td>
+				<td id="R499_MQ8J2ZP_contract" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>New Town Plaza</td>
+				<td id="R610_MQ6K2ZP_contract" class=""></td>
+				<td id="R610_MQ6L2ZP_contract" class=""></td>
+				<td id="R610_MQ6M2ZP_contract" class=""></td>
+
+				<td id="R610_MQ7F2ZP_contract" class=""></td>
+				<td id="R610_MQ7G2ZP_contract" class=""></td>
+				<td id="R610_MQ7H2ZP_contract" class=""></td>
+
+				<td id="R610_MQ8D2ZP_contract" class=""></td>
+				<td id="R610_MQ8E2ZP_contract" class=""></td>
+				<td id="R610_MQ8F2ZP_contract" class=""></td>
+				
+				<td id="R610_MQ8G2ZP_contract" class=""></td>
+				<td id="R610_MQ8H2ZP_contract" class=""></td>
+				<td id="R610_MQ8J2ZP_contract" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>apm Hong Kong</td>
+				<td id="R673_MQ6K2ZP_contract" class=""></td>
+				<td id="R673_MQ6L2ZP_contract" class=""></td>
+				<td id="R673_MQ6M2ZP_contract" class=""></td>
+
+				<td id="R673_MQ7F2ZP_contract" class=""></td>
+				<td id="R673_MQ7G2ZP_contract" class=""></td>
+				<td id="R673_MQ7H2ZP_contract" class=""></td>
+
+				<td id="R673_MQ8D2ZP_contract" class=""></td>
+				<td id="R673_MQ8E2ZP_contract" class=""></td>
+				<td id="R673_MQ8F2ZP_contract" class=""></td>
+				
+				<td id="R673_MQ8G2ZP_contract" class=""></td>
+				<td id="R673_MQ8H2ZP_contract" class=""></td>
+				<td id="R673_MQ8J2ZP_contract" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>Festival Walk</td>
+				<td id="R485_MQ6K2ZP_contract" class=""></td>
+				<td id="R485_MQ6L2ZP_contract" class=""></td>
+				<td id="R485_MQ6M2ZP_contract" class=""></td>
+
+				<td id="R485_MQ7F2ZP_contract" class=""></td>
+				<td id="R485_MQ7G2ZP_contract" class=""></td>
+				<td id="R485_MQ7H2ZP_contract" class=""></td>
+
+				<td id="R485_MQ8D2ZP_contract" class=""></td>
+				<td id="R485_MQ8E2ZP_contract" class=""></td>
+				<td id="R485_MQ8F2ZP_contract" class=""></td>
+				
+				<td id="R485_MQ8G2ZP_contract" class=""></td>
+				<td id="R485_MQ8H2ZP_contract" class=""></td>
+				<td id="R485_MQ8J2ZP_contract" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>Causeway Bay</td>
+				<td id="R409_MQ6K2ZP_contract" class=""></td>
+				<td id="R409_MQ6L2ZP_contract" class=""></td>
+				<td id="R409_MQ6M2ZP_contract" class=""></td>
+
+				<td id="R409_MQ7F2ZP_contract" class=""></td>
+				<td id="R409_MQ7G2ZP_contract" class=""></td>
+				<td id="R409_MQ7H2ZP_contract" class=""></td>
+
+				<td id="R409_MQ8D2ZP_contract" class=""></td>
+				<td id="R409_MQ8E2ZP_contract" class=""></td>
+				<td id="R409_MQ8F2ZP_contract" class=""></td>
+				
+				<td id="R409_MQ8G2ZP_contract" class=""></td>
+				<td id="R409_MQ8H2ZP_contract" class=""></td>
+				<td id="R409_MQ8J2ZP_contract" class=""></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>ifc </td>
+				<td id="R428_MQ6K2ZP_contract" class=""></td>
+				<td id="R428_MQ6L2ZP_contract" class=""></td>
+				<td id="R428_MQ6M2ZP_contract" class=""></td>
+
+				<td id="R428_MQ7F2ZP_contract" class=""></td>
+				<td id="R428_MQ7G2ZP_contract" class=""></td>
+				<td id="R428_MQ7H2ZP_contract" class=""></td>
+
+				<td id="R428_MQ8D2ZP_contract" class=""></td>
+				<td id="R428_MQ8E2ZP_contract" class=""></td>
+				<td id="R428_MQ8F2ZP_contract" class=""></td>
+				
+				<td id="R428_MQ8G2ZP_contract" class=""></td>
+				<td id="R428_MQ8H2ZP_contract" class=""></td>
+				<td id="R428_MQ8J2ZP_contract" class=""></td>
+			</tr>
+		</tbody>
+	</table>
+	<pre id='getResponse'></pre>
+</body>
+</html>

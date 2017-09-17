@@ -1,0 +1,26 @@
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+*/
+a {
+  color: #00B7FF;
+}
+
+.true {
+	background: #4bff00;
+}
+
+.false {
+    background: #e88585;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 5px;
+	text-align: center;
+	border: 1px solid;
+}
