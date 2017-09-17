@@ -15,6 +15,10 @@ a {
     background: #e88585;
 }
 
+.null {
+	background: #d3d3d3;
+}
+
 table {
 	border-collapse: collapse;
 }
